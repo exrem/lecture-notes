@@ -1,0 +1,29 @@
+name: format
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: dependencies
+        run: bun i
+
+      - name: format
+        run: bun format
+
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: 'style: auto-formatting'
