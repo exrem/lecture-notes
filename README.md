@@ -1,15 +1,48 @@
-# lecture-notes
+# 📝 My Lecture Notes
 
-To install dependencies:
+This is the repo of the website where I keep the notes I've taken during lectures at ADA.
 
-```bash
-bun install
+<div align="center">
+
+[live website](https://lecture-notes.ekrem.vercel.app/)
+
+</div>
+
+## Running locally
+
+### Prerequisites
+
+You should have [Git](https://git-scm.com/) and [Bun](https://bun.sh/) installed on your machine.
+
+### Clone the repository
+
+```sh
+git clone https://github.com/exrem/lecture-notes.git
 ```
 
-To run:
+### Install dependencies
 
-```bash
-bun run index.ts
+```sh
+cd lecture-notes
+bun i
 ```
 
-This project was created using `bun init` in bun v1.2.20. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+### Start the dev server
+
+```sh
+bun dev
+```
+
+🎉 Voilà! You can explore and modify the website without affecting the main version at all!
+
+## Contributing
+
+As you might expect, I don't accept any contributions related to the content (cuz they're **my** notes, duh; and this is not a [wiki](https://en.wikipedia.org/wiki/Wiki)) but if you'd like to suggest some improvements related to the tech stack, or design of the website itself, or fixing some typos (or any mistakes I've made), any issue/pull request is welcomed!
+
+---
+
+<div align="center">
+
+[əkrəm.](https://ekrem.vercel.app/)
+
+</div>
